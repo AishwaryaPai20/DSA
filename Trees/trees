@@ -28,3 +28,24 @@ The last leaf element might not have a right sibling i.e. a complete binary tree
 
 Balanced Binary Tree is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.
 
+Deletion of node with two children
+->Deleted node is replaced with either highest value in left sub tree or least value in right sub tree
+
+AVL trees
+Balanced Factor=Height of right subtree-Height of left subtree
+
+shoulld be -1,0,1 for avl trees |BF|<=1
+
+LL Rotation -< clockwise directiona
+RR Rotation -> anticlockwise direction
+LR Rotation  -> anti then clockwise direction
+RL Rotation -> clockwise then anti
+
+For Imbalanced trees
+
+Left-Left Insertion -> Right rotate once
+Right- Right Insertion -> Left roatte once
+Left- Right Insertion -> Left Rotate once then right rotate once
+Right-Left Insertion -> Right rotate once then left rotate once
+
+in right left insertion right rotate is done wrt to rightchild of first imbalanced node 

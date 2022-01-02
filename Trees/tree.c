@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#include<limits.h>
 struct node
 {
     struct node *left;
@@ -28,7 +28,10 @@ int main()
     inorder(root);
     printf("\n");
     deletenode(root->left);
-    return 0;
+    // if(isBinarySearchTree(root,INT_MIN,INT_MAX)) 
+    // printf("It is Binary Search Tree \n");
+    // else  printf("It is not a Binary Search Tree \n");
+    // return 0;
 }
 
 struct node *createnode()
@@ -81,3 +84,39 @@ void deletenode(struct node *root)
         free(root);
     }
 }
+// bool IsSubtreeLesser(struct node *root,int value);
+// bool IsSubtreeGreater(struct node *root,int value);
+
+// bool IsBinarySearchTree(struct node *root)
+// {
+//     if(root==NULL) return true;
+//     if(IsSubtreeLesser(root->left,root->data)&&IsSubtreeGreater(root->right,root->data)&&IsBinarySearchTree(root->left)&&IsBinarySearchTree(root->right))
+//     return true;
+//     else 
+//     return false;
+// }
+
+// bool IsSubtreeLesser(struct node *root,int value)
+// {
+//     IF(root==NULL) return true;
+//     if(root->data<=value&&IsSubtreeLesser(root->left,value)&&IsSubtreeLesser(root->right,value))
+//     return true;
+//     else 
+//     return false;
+// }
+// bool IsSubtreeGreater(struct node *root,int value)
+// {
+//     IF(root==NULL) return true;
+//     if(root->data<=value&&IsSubtreeGreater(root->left,value)&&IsSubtreeGreater(root->right,value))
+//     return true;
+//     else 
+//     return false;
+// }
+
+// bool IsBinarySearchTree(struct node *root,int minValue, int maxValue)
+// {
+//     if(root==NULL) return true;
+//     if(root->data>minValue&&root->data<maxValue&&IsBinarySearchTree(root->left,minValue,root->data)&&IsBinarySearchTree(root->right,root->data,maxValue))
+//     return true;
+//     else return false;
+// }
