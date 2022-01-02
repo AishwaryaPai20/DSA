@@ -1,0 +1,14 @@
+two searching types
+1)sequential searching  
+element by element  -> linear search -> not sorted
+2)interval searching    
+element in interval -> binary search -> sorted
+
+linear search 
+worst case when element is found at last element
+time is O(n) 
+
+binary search 
+sorted array is searched by dividing it in the half
+time complexity is O(log n)
+

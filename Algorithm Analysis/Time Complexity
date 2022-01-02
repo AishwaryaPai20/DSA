@@ -1,0 +1,38 @@
+efficiency of algorithm is relate dto the
+
+input length (number of steps) -> time complexity 
+volume of memory -> space complexity
+
+knowing its efficiency is very vital on mission critical tasks
+
+multiple approaches are there for a problem then algorithm analysis is performed to figure out which is better/optimum
+
+Time complexity:
+computational way to show how runtime of a program increases as the sze of its input increases
+
+BETTER ALGORITHM:
+1. Faster algorithm analysis
+2. Less memory and space complexity
+3. Easy to read
+4. Less line of code
+5. It gives estimitate which can be used to study the behaviour of an algorithm analysis
+
+Asymptotic Analysis:
+It is used to mathematically calculate the running time of any operation inside an algorithm
+
+Big O Notation  - > max amount of time it takes to run the algorithm
+calculates the upper bound of an algorithm
+how to find
+a. find the fastest growing variable term 
+b. eliminate the co-efficients constant/terms
+f(n)<=c.g(n)
+//worst case scenario
+1<log(n)<sqrt(n)<n<nlog(n)<n^2<n^3<....n^n
+
+Big Omega Notation -> best case scenario,
+tells you what is the fastest time/behaviour in which the algorithms can run
+f(n)>=c.g(n)
+
+Big Theta Notation -> average case scenario,
+most realisitic time complexity of an algotihm
+c1.g(n)<=f(n)<=c2.g(n)   c1>0 c2>0

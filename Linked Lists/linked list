@@ -1,0 +1,30 @@
+linked list 
+non contiguous list -> linear data structure
+connected using pointers
+consist of nodes consisting data and reference to the next node in the list
+
+linked list vs array list
+
+pro -> dynamic size, ease of insertion deletion 
+
+cons -> random access is not allowed ,only sequentially elements can be accessed 
+extra memory space for a pointer is required 
+not cache friendly 
+
+Operations in linked list
+    
+traversing list
+append a new node (to the end)
+prepend a new node(to the start of the list)
+inserting a new node to a specific position in the list
+deleting a new node from a specific position in the list
+updating a node in the list   ( unique key is also added )
+
+in doubly linked list
+there is p= previous node 
+d= data and n =nodes
+can go both forward and backward in the list
+
+in circular linked list no null 
+
+implementing in stack,queue,hash table,graphs

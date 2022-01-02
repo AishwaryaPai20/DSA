@@ -1,0 +1,112 @@
+Sorting is required to rearrange a given array or list DS elemnts according to a particular pattern.
+
+Why do we need to do this-
+
+Efficient sorting is important for optimizing the efficiency of other algortihms that
+it is easier and faster to locate items in a sorted list than unsorted list
+producing more human readable output
+
+Types of sorting algorithms are
+1. Selection sort
+2. Bubble sort
+3. Insertion sort
+4. Merge sort
+5. Quicksort sort
+6. Heap sort
+7. Radix sort
+and many other sorting algorithms
+
+1. Selection sort (in-place comparison sort)
+Time complexity O(n^2)
+Algorithm divides the input list into two parts
+-> the sublist of items already sorted (left to right)
+-> the sublists of items remaining to be sorted
+-> it proceeds by finding the smallest or largest depending on the order elemnt in the unsorted sublist and exchanginfg it with the left unsorted element and moving the sublist boundaries one element to the right
+
+In selection sort all you have to do is place the smallest elemnt to the left of array and count the iterations made
+
+for(int i=0;i<n-1;i++)
+    {
+        min=i;
+        for(j=i+1;j<n;j++)
+        {
+            if(arr[j]<arr[min])
+            min=j;
+        }
+        if(min!=i) 
+        {
+            int temp=arr[min];
+            arr[min]=arr[i];
+            arr[i]=temp;
+        }
+    }
+
+2. Insertion sort //one item at a Time
+O(n^2) time complexity
+efficient for small data sets ,for quadratic sorting algorithms 
+
+Steps
+.pick next element 
+.compare with all elements in sorted sub-list on the left
+.shift all elements in sorted sub list that is greater than the value to be sorted
+.insert the value
+.repeat until list is sorted
+
+for(int i=1;i<n;i++)
+    {
+        key=arr[i];
+        j=i-1;
+        while(j>=0 && arr[j]>key)
+        {
+            arr[j+1]=arr[j];
+            j=j-1;
+        }
+        arr[j+1]=key;
+    }
+
+3. Bubble Sorting //swapping the adjacent elements
+O(n^2) time complexity
+suitable for small data sets 
+with every iteration largest element bubbles up towards the last place
+//just like the water bubble rise on the water surface 
+
+Steps
+a. start from index 0 
+b. if the current element is gretaer than next swap them
+c. else move to the next element
+d. repeat a till it is sorted
+
+for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n-i-1;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+
+4.Opitimized Bubble Sorting 
+
+incase if the array is already sorted in bubble sort within earlier rounds and doesnt require all n rounds to happen we can optimize the code using optimized bubble sort algorithm
+
+for(int i=0;i<n;i++)
+    {
+        int flag=false;
+        for(int j=0;j<n-i-1;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                int flag=true;
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+        if(flag==false) break;   //no swapping happens in a round means it is already sorted
+    }
+
+5.

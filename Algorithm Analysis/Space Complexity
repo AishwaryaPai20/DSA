@@ -1,0 +1,17 @@
+Space Complexity 
+memory required by an algorithm to execute a program and produce output. 
+space is represented by big O Notation
+-> it includes both auxillary space and space used by input functions
+
+-> Auxillary space ->temporary space allocated by your algorithm to solve the problem ,,excluding the input size
+
+constant space -> O(1)
+linear space -> O(n)
+//space remains the same even after n iterations so it will give a constant bytes
+
+factorial of a number
+
+iterative using for loops -> O(1)
+recursive using n*fact(n-1) ->O(n)
+
+

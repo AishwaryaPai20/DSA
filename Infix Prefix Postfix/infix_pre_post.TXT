@@ -1,0 +1,14 @@
+infix  <operand><operator><operand>
+order of operations
+1. Parenthesis
+2. Exponents   // r to l
+3. Multiplication and Division  //l to r
+4. Addition and Subtraction //l to r
+
+prefix (polish notation)
+<operator><operand><operand>
+
+postfix(reverse polish notation)
+<operand><operand><operator>
+
+infix is human readable ,postfix and prefix is good for computers

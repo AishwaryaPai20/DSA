@@ -1,0 +1,31 @@
+Standard stack operations
+push()
+pop()
+isEmpty()
+isFull()
+peek() access item at i position
+count() get the number of items in the stack
+change() change the item at the ith position
+display() display all the items in the stack
+
+//some common places where stack is used
+
+Balancing of symbols
+Infix to Postfix/Prefix operations
+Redo-Undo features at many places like editors workshop
+Forward and backward feature in we browsers
+
+//used in algorithms
+tower of hanoi
+tree traversals
+stock span problem 
+histogram problem
+graph algorithm like sorting
+
+//other application can be used
+backtracking algorithm
+knight tour problem
+rat in a maze
+N queen problem
+sudoku solver
+

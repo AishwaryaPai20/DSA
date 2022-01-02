@@ -1,0 +1,24 @@
+queue is a linear ds which operates in fifo and last in last out order
+
+abstract data type with a bounded capacity
+//abstract data types are definitions of data and operations but do not have implementation details
+
+front/head at the start and rear/back at the end
+enqueue is a linear ds which operates in added at one end(raer end)
+
+dequeue is a linear ds which operates by removing from the other end(front/head end)
+
+
+//operations 
+enqueue()  
+dequeue()
+isFull()   -> rear==size(arr)-1 return true
+isEmpty()  -> front==-1 && rear==-1 return true
+count()   
+
+//used in cpu scheduling,disk scheduling
+
+queue makes the front value 0 and when the arr is filled it shows queue is full and so the front
+0 0 2 6 7 is also considered as full 
+
+for a citcular linked list only difference is rear=(Rear+1)%N;

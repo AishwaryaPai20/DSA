@@ -1,0 +1,30 @@
+Tree is a non linear data structure 
+every binary tree has 2 nodes left and right
+when no more nodes are present at the bottom level
+both the left and right points to NULL
+
+We use recursion in trees to traverse within its unknown length
+shortcut for traversal 
+
+1. travel along the edges
+2. for 
+preorder (root->left->right) so print the elements in its first visit
+inorder (left->root->right) so print the elements in its second visit
+postorder (left->right->root) so print the elements in its third visit
+
+A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:
+data item
+address of left child
+address of right child
+
+A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children.
+
+A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.
+
+A complete binary tree is just like a full binary tree, but with two major differences
+Every level must be completely filled
+All the leaf elements must lean towards the left.
+The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.
+
+Balanced Binary Tree is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.
+
