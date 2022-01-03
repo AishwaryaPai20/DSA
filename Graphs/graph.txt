@@ -1,0 +1,53 @@
+Graph is collection of vertices and edges connecting these vertices
+
+Directed Edge -> One way connection. 
+Undirected edge -> Two way connection 
+Directed graph -> All directed edges 
+Undirected graph -> All undirected edges.
+
+Edge is defined by its two endpoints and
+
+Graph Is used to model paths in city, social network.Website backlinks.
+
+Indegree is no of edges going out of the node
+Outdegree is no of edges coming into the node
+
+>Representation of graphs
+Adjacency list mark the nodes with the list of its neighbors
+Adjaceny matrix -Aij =1 for an edge between i and j,0 otherwise;
+Cost Adjaceny matrix instead of 1 comes the cost and instead of 0 -1 is filled only in cases where cost can be 0
+Cost Adjaceny list - cost is stored along with the createLinkedList
+Compact List representation- the entire graph is stored in 1d array
+
+>Graph traversal
+two algorithms of graph traversal are->
+BFS breadth first search
+DFS depth first search
+
+in graph traversal algorithm we traverse through all hte nodes of a graph and add it to the collection of visited nodes and
+exploring a vertex means visiting all the connected vertices of the graph
+
+BFS traversal  <queuue>
+We start with a note and start exploring it's connected notes. The same process is repeated with all the connecting notes until all the notes are visited.
+tru to construct the bfs spanning tree, then do the level order traversal
+
+two queues of traversal
+->visited ->exploration queue
+
+DFS traversal <stack>
+
+Subgraph
+A sub graph of a graph G is a graph whose vertices and edges are subsets of the original graph G.
+
+Connected graph -> if there is a path from one point to another point then its is connected
+Complete graph -> every pair of distinct vertices is connected by a unique edge
+
+connected subgraph is said to be spanning tree of graph G. If all the vertices of G must be present in this S and the number of edges in as should be V-1.
+a complete graph has pow(n,n-2) where n is the number of vertices in the graph
+
+a minimum spanning tree is the spanning tree with minimum cost
+
+prims algorithms
+->Greedy approaches
+->we start with any node and create a minimum spanning tree
+->we grow the spanning tree from a starting position until n-1 edges are fromed

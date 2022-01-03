@@ -49,3 +49,5 @@ Left- Right Insertion -> Left Rotate once then right rotate once
 Right-Left Insertion -> Right rotate once then left rotate once
 
 in right left insertion right rotate is done wrt to rightchild of first imbalanced node 
+
+Trees is also a graph
